@@ -71,7 +71,7 @@ body{
     height: 100vh;
 }
 .logo > img{
-    height: clamp(2rem,5vw, 6rem);
+    height: clamp(2rem,5vw, 4rem);
     object-fit: contain;
 }
 
@@ -94,7 +94,7 @@ body{
 }
 
 .sidebar > div > h1{
-    font-size: 1.6rem;
+    font-size: max(1rem,2.5vw);
     font-family: 'Cormorant Garamond';
     margin: 0;
 }
@@ -115,8 +115,7 @@ body{
     position: fixed;
     top:85px;
     left: -20px;
-    padding: 1rem;
-    height: 1rem;
+    height: 3rem;
     width: 0%;
     background-color:#115e59;
     border-radius: 50px;
@@ -127,7 +126,7 @@ body{
     transition: width 0.5s ease-in-out;
 }
 .small-sidebar.close-sidebar{
-    width: 5%;
+    width: max(150px,10%);
 }
 .toggle-small-sidebar:hover{
     background-color: #9a3412;
@@ -142,6 +141,7 @@ body{
     border-radius: 50px;
     transition: background-color 0.1s ease-in-out;
 }
+
 .toggle-sidebar{
     width: 40px;
     height: 40px;
@@ -152,6 +152,10 @@ body{
     border-radius: 50px;
     
     transition: background-color 0.2s ease-in-out;
+}
+.toggle-sidebar > img{
+    width: max(16px, 2.7vw);
+    height: max(16px, 2.7vw);
 }
 .sidebar-head > div:hover{
     background-color: var(--hover_color);
@@ -300,7 +304,7 @@ hr{
     position: absolute;
     visibility: hidden;
     transform: translateY(-10%);
-    width: clamp(15%,17%,80%);
+    width: max(15vw, 200px);
     opacity: 0%;   
     color: white; 
 
